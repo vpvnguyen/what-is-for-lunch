@@ -1,12 +1,19 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import { Animated } from "react-animated-css";
 
 export default class App extends Component {
   render() {
     return (
-      <div>
-        heyo
-      </div>
-    )
+        <Animated
+          animationIn="bounceInLeft"
+          animationOut="fadeOut"
+          isVisible={true}
+        >
+
+          <div>lunch?</div>
+
+        </Animated>
+    );
   }
 }
